@@ -1,0 +1,111 @@
+body{
+  background-color: #282c34;
+
+  margin: 0em;
+  padding: 0em;
+  border: 0em;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.card_color{
+  color:black
+}
+
+.ss-title{
+  background-color: #282c34;
+  font-weight: bold;
+  
+}
+.home_title{
+ margin-top: 10vh;
+  color: white;
+  font-size: 15vh;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.home_img{
+ width: 40vh;
+  margin-top: 24vh;
+}
+
+.nav_title{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin-left: 2vh;
+color: white !important;
+font-size: 4vh !important;
+
+}
+
+.navbar_link{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white !important;
+}
+
+.site_title{
+  color: white;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#search_button{
+  background-color: #0E6EFD;
+  color: white;
+  border-color: #0E6EFD;
+ 
+}
+
+#button_space{
+  margin-bottom: 4vh;
+
+}
+
+#space_top{
+  margin-top: 3em;
+}
+
+#space_top_button{
+  margin-top: 1em;
+}
