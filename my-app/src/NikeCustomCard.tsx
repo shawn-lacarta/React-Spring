@@ -2,12 +2,12 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Card } from "react-bootstrap";
-import {PostWithoutId} from "./PostWithoutId";
+import { productContent } from "./Type";
 
 
 
 
-const NikeCustomCard = (props: PostWithoutId) => {
+const NikeCustomCard = (props: productContent) => {
   return (
     <Card>
       <Card.Img src={props.pic} />

@@ -6,52 +6,57 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import CustomCardAPP from "./JordanAllProductPageCustomCard";
 import { SearchContext } from "./SearchContext";
-import {PostWithId} from "./PostWithId";
+import { productContent } from "./Type";
+import ProductService from "./ProductService";
 
 function JordanAllProductPage() {
-  const [postList, setPost] = useState<PostWithId[]>([]);
-  const {searchTerm, addSearchTerm} = useContext(SearchContext);
+  const [postList, setPost] = useState<productContent[]>([]);
+  const { searchTerm, addSearchTerm } = useContext(SearchContext);
+  const service: ProductService = new ProductService();
 
   useEffect(() => {
-    fetch("http://localhost:3004/posts")
-      .then((response) => {
-        return response.json();
-      })
-      .then((myJson) => {
-        //setTimeout(() => {
-        setPost(myJson);
-        //}, 10000);
-      });
+    service.getAllPost("posts").then((data) => setPost(data));
   }, []);
-
-
 
   return (
     <div className="App">
-
       <Container>
         <Row id="button_space">
           <h1 className="site_title">Jordan</h1>
-          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onChange={event => { addSearchTerm(event.target.value) }} />s
+          <input
+            className="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            onChange={(event) => {
+              addSearchTerm(event.target.value);
+            }}
+          />
+          s
         </Row>
         <Row>
-       
-          {postList.filter((val) => {
-           return val.name.toLocaleLowerCase().includes(searchTerm.toLowerCase()) || searchTerm === "";
-          }).map((post: PostWithId) => {
-            console.log(post.pic);
-            return (
-              <Col md={6}>
-                <CustomCardAPP
-                  pic={post.pic}
-                  name={post.name}
-                  id={post.id}
-                  price={post.price}
-                />
-                <br />
-              </Col>
-            );
-          })}
+          {postList
+            .filter((val) => {
+              return (
+                val.name
+                  .toLocaleLowerCase()
+                  .includes(searchTerm.toLowerCase()) || searchTerm === ""
+              );
+            })
+            .map((post: productContent) => {
+              console.log(post.pic);
+              return (
+                <Col md={6}>
+                  <CustomCardAPP
+                    pic={post.pic}
+                    name={post.name}
+                    id={post.id}
+                    price={post.price}
+                  />
+                  <br />
+                </Col>
+              );
+            })}
         </Row>
       </Container>
     </div>

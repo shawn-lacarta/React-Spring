@@ -2,9 +2,10 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Card } from "react-bootstrap";
-import {PostWithId} from "./PostWithId";
+import { productContent } from "./Type";
 
-const JordanAllProductPageCustomCard = (props: PostWithId) => {
+
+const JordanAllProductPageCustomCard = (props: productContent) => {
   return (
     <Card>
       <Card.Img src={props.pic} />

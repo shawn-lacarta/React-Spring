@@ -1,40 +1,32 @@
-import React, {} from "react";
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomCard from "./JordanSinglePageCustomCard";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import {PostWithDescription} from "./PostWithDescription";
+import { productContent } from "./Type";
+import ProductService from "./ProductService";
 
-  
-  function JordanSinglePage() {
-    const [post, setPost] = useState<PostWithDescription>({} as PostWithDescription);
-  const {id} = useParams<{ id: string }>();
-    useEffect(() => {
-      fetch("http://localhost:3004/posts/" + id)
-        .then(function (response) {
-          return response.json();
-        })
-        .then((myJson) => {
-          //setTimeout(() => {
-          setPost(myJson);
-          //}, 10000);
-        });
-    }, [id]);
-    
-   return (
-      <div className="App">
-            <CustomCard pic={post.pic}
-                  name={post.name}
-                  
-                  desc={post.desc}
-                  price={post.price}/> 
-      </div>
-    
-    );
-    
-  }
+function JordanSinglePage() {
+  const [post, setPost] = useState<productContent>({} as productContent);
+  const { id } = useParams<{ id: string }>();
+  const service: ProductService = new ProductService();
 
+  useEffect(() => {
+    service.getById(id, "posts").then((data) => setPost(data));
+  }, []);
+
+  return (
+    <div className="App">
+      <CustomCard
+        pic={post.pic}
+        name={post.name}
+        price={post.price}
+        desc={post.desc}
+      />
+    </div>
+  );
+}
 
 export default JordanSinglePage;
