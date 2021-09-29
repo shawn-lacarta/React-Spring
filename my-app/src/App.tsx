@@ -11,6 +11,7 @@ import NikeSinglePage from "./NikeSinglePage";
 import Home from "./Home";
 import SearchContextProvider from "./SearchContext";
 import ContactUs from "./ContactUs";
+import Formular from "./Formular";
 
 function App() {
  
@@ -32,6 +33,9 @@ function App() {
               <a className="nav-link navbar_link" href="/SportAllProductPage">Nike</a>
             </li>
             <li className="nav-item">
+              <a className="nav-link navbar_link" href="/Formular">Formular</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link navbar_link" href="/ContactUs">Contact Us</a>
             </li>
           </ul>
@@ -47,6 +51,7 @@ function App() {
               <Route exact path={"/JordanSinglePage/:id"} component={JordanSinglePage} />
               <Route exact path={"/NikeSinglePage/:id"} component={NikeSinglePage} />
               <Route exact path={"/ContactUs"} component={ContactUs} />
+              <Route exact path={"/Formular"} component={Formular}></Route>
             </Switch>
           </BrowserRouter>
 

@@ -16,7 +16,7 @@ function NikeAllProductPage() {
   const service: ProductService = new ProductService();
 
   useEffect(() => {
-    service.getAllPost("posts").then((data) => setPost(data));
+    service.getAllPost("sport").then((data) => setPost(data));
   }, []);
 
   return (
