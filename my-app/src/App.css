@@ -109,3 +109,7 @@ font-size: 4vh !important;
 #space_top_button{
   margin-top: 1em;
 }
+
+.input_space{
+  margin-bottom: 1vh;
+}

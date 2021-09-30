@@ -16,6 +16,7 @@ function JordanAllProductPage() {
 
   useEffect(() => {
     service.getAllPost("posts").then((data) => setPost(data));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -32,7 +33,7 @@ function JordanAllProductPage() {
               addSearchTerm(event.target.value);
             }}
           />
-          s
+          
         </Row>
         <Row>
           {postList

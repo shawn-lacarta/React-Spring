@@ -15,6 +15,7 @@ function NikeSinglePage() {
 
   useEffect(() => {
     service.getAllPost("posts").then((data) => setPost(data));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   let post: productContent | undefined;

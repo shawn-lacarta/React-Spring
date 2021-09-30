@@ -15,6 +15,7 @@ function JordanSinglePage() {
 
   useEffect(() => {
     service.getById(id, "posts").then((data) => setPost(data));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

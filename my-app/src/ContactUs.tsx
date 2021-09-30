@@ -20,16 +20,13 @@ export default function Contact() {
         <h1 className="site_title">Contact Us</h1>
         <form onSubmit={sendEmail}>
           <div className="form-group">
-            <label>name</label>
-            <input type="text" className="form-control" aria-describedby="emailHelp" placeholder="name" />
+            <input type="text" className="form-control input_space" aria-describedby="emailHelp" placeholder="name" required/>
           </div>
           <div className="form-group">
-            <label>email</label>
-            <input type="email" className="form-control" placeholder="email" />
+            <input type="email" className="form-control input_space" placeholder="email" required/>
           </div>
           <div className="form-group">
-            <label>text</label>
-            <input type="textarea" className="form-control" placeholder="message" />
+            <input type="textarea" className="form-control input_space" placeholder="message" required/>
           </div>
 
           <button type="submit" className="btn btn-primary" id="space_top_button">Submit</button>
