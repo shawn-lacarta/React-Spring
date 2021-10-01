@@ -113,3 +113,26 @@ font-size: 4vh !important;
 .input_space{
   margin-bottom: 1vh;
 }
+
+.input_background{
+  background-color: #808080;
+  border-radius: 25px;
+  margin-top: 4em;
+
+
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 2em;
+  width: auto;
+}
+
+.footer{
+ position: relative !important;
+ background-color: #282c34;
+}
+
+.error_message{
+  color: white;
+}
+
+

@@ -59,6 +59,18 @@ function App() {
       </Container>
 
     </div>
+
+    <footer className="text-center text-white fixed-bottom footer">
+
+  <div className="container p-4"></div>
+  
+
+ 
+  <div className="text-center p-3 footer">
+    © 2021 Copyright: Shawn Lacarta
+  </div>
+ 
+</footer>
     
     </SearchContextProvider>
   

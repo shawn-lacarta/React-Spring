@@ -14,7 +14,7 @@ function NikeSinglePage() {
   const service: ProductService = new ProductService();
 
   useEffect(() => {
-    service.getAllPost("posts").then((data) => setPost(data));
+    service.getAllPost("sport").then((data) => setPost(data));
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

@@ -28,23 +28,22 @@
       "name": "air jordan 5 metallic white",
       "price": "CHF 450"
     },
-  {
+    {
       "id": 5,
       "pic": "https://images.stockx.com/images/Jordan-11-Retro-Space-Jams-2016-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1606319512",
       "desc": "The Air Jordan 11 Retro ‘Space Jam’ 2016 commemorates the 20th anniversary of the movie ‘Space Jam.’ Worn by Michael Jordan as a Player Exclusive (PE) in both the movie and the 1995 NBA Playoffs, the 2016 retro ended up being Nike’s largest and most successful shoe launch ever. This 2016 sneaker is a more faithful reproduction of the original PE than the 2000 and 2009 retros. The sneaker also swaps the traditional #23 for MJ’s comeback #45 on the heel, a first for an Air Jordan 11 retail release.",
       "name": "air jordan 11 space jam",
       "price": "CHF 450"
     },
- {
+    {
       "id": 6,
       "pic": "https://images.stockx.com/images/Air-Jordan-3-Retro-White-Cement-2011-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1607662449",
       "desc": "The Air Jordan 3 marked the debut of Brand Jordan's visible Air cushioning, elephant print, and the Jumpman logo. Falling in line with the 2003 retros, this 2011 iteration features a Jumpman logo in place of the 1988 OG Nike Air branding at the heel and tongue. Nike Air branding wouldn't return to the Air Jordan 3 until 2013 with a release appropriately named 'Air Jordan 3 Retro '88.'",
       "name": "air jordan 3 white cement",
       "price": "CHF 550"
     }
-   
   ],
-"sport": [
+  "sport": [
     {
       "id": 1,
       "pic": "https://images.stockx.com/images/Nike-Air-Max-Plus-3-Triple-White-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1611595866",
@@ -73,20 +72,23 @@
       "name": "nike air presto triple white",
       "price": "CHF 150"
     },
-  {
+    {
       "id": 5,
       "pic": "https://images.stockx.com/images/Nike-Air-Max-90-Triple-White-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1607053739",
       "desc": "The Air Max 90 'Triple White' launched in January 2020, marking the classic silhouette’s 30th anniversary. Featuring a recrafted build inspired by the original 1990 release, the sneaker is dressed in an all-white finish that allows its clean lines to stand out. Details include a mesh upper with stitched leather overlays, TPU eyelets and an Air-infused midsole reinforced by a waffle-tread rubber outsole.",
       "name": "nike airmax 90 triple white",
       "price": "CHF 180"
     },
- {
+    {
       "id": 6,
       "pic": "https://images.stockx.com/images/Nike-Air-Max-Plus-Unite-Totale-W.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1612545242",
       "desc": "The Air Jordan 3 marked the debut of Brand Jordan's visible Air cushioning, elephant print, and the Jumpman logo. Falling in line with the 2003 retros, this 2011 iteration features a Jumpman logo in place of the 1988 OG Nike Air branding at the heel and tongue. Nike Air branding wouldn't return to the Air Jordan 3 until 2013 with a release appropriately named 'Air Jordan 3 Retro '88.'",
       "name": "nike airmax plus unite totale (w)",
       "price": "CHF 250"
     }
+  ],
+  "newsLetter": [
+  
   ],
   "comments": [
     {

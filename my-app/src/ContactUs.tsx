@@ -17,6 +17,7 @@ export default function Contact() {
     }
     return (
        <><div>
+         <div className="input_background">
         <h1 className="site_title">Contact Us</h1>
         <form onSubmit={sendEmail}>
           <div className="form-group">
@@ -31,6 +32,7 @@ export default function Contact() {
 
           <button type="submit" className="btn btn-primary" id="space_top_button">Submit</button>
         </form>
+       </div>
       </div>
       <Carousel >
           <div id="space_top">
