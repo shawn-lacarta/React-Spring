@@ -36,6 +36,7 @@ function NewsLetter() {
                 input.lastName,
                 input.email
               );
+              alert("added");
               setSubmitting(false);
             }, 500);
           }}
@@ -48,6 +49,7 @@ function NewsLetter() {
                 <Field
                   id="firstName"
                   name="firstName"
+                  data-cy="firstname"
                   placeholder="first name"
                   className="form-control input_space"
                 />
@@ -60,6 +62,7 @@ function NewsLetter() {
                 <Field
                   id="lastName"
                   name="lastName"
+                  data-cy="lastname"
                   placeholder="last name"
                   className="form-control input_space"
                 />
@@ -70,6 +73,7 @@ function NewsLetter() {
                 <Field
                   id="email"
                   name="email"
+                  data-cy="email"
                   placeholder="email"
                   className="form-control input_space"
                 />
