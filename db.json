@@ -90,9 +90,81 @@
   "newsLetter": [
     {
       "id": 1,
-      "firstName": "test",
-      "lastName": "example",
-      "email": "test@example.com"
+      "firstName": "Shawn",
+      "lastName": "Lacarta",
+      "email": "shawn.lacarta@yahoo.com"
+    },
+    {
+      "id": 2,
+      "firstName": "gugus",
+      "lastName": "gugus",
+      "email": "test@example.ch"
+    },
+    {
+      "id": 3,
+      "firstName": "test3",
+      "lastName": "gugus",
+      "email": "gugus@email.com"
+    },
+    {
+      "id": 4,
+      "firstName": "test4",
+      "lastName": "gugus",
+      "email": "test4@gugus.com"
+    },
+    {
+      "id": 5,
+      "firstName": "test5",
+      "lastName": "gugus",
+      "email": "test5@email.com"
+    },
+    {
+      "id": 6,
+      "firstName": "test6",
+      "lastName": "gugus",
+      "email": "test6@email.com"
+    },
+    {
+      "id": 7,
+      "firstName": "test 7",
+      "lastName": "gugus",
+      "email": "gugus@test7.com"
+    },
+    {
+      "id": 8,
+      "firstName": "test8",
+      "lastName": "gugus",
+      "email": "test8@gugus.com"
+    },
+    {
+      "id": 9,
+      "firstName": "test9",
+      "lastName": "test",
+      "email": "test@example.ch"
+    },
+    {
+      "id": 10,
+      "firstName": "test 0",
+      "lastName": "rew",
+      "email": "test@example.ch"
+    },
+    {
+      "id": 11,
+      "firstName": "test 11",
+      "lastName": "gugus",
+      "email": "ssss@fgh.com"
+    },
+    {
+      "id": 12,
+      "firstName": "test 12",
+      "lastName": "gugus",
+      "email": "test@example.net"
+    },
+    {
+      "id": 13,
+      "firstName": "test 13",
+      "lastName": "test",
+      "email": "test@example.net"
     }
   ],
   "comments": [

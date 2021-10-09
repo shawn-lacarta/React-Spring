@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  db:
+    image: postgres
+    container_name: postgresdb
+    volumes:
+      - ../data/:/var/lib/mysql
+    restart: on-failure
+    environment:
+      POSTGRES_ROOT_PASSWORD: 1234
+      POSTGRES_DATABASE: postgresdb
+      POSTGRES_USER: stduser
+      POSTGRES_PASSWORD: pwd
+    ports:
+      - "5432:5432"
