@@ -1,19 +1,20 @@
 import React from "react";
 import { Formik, Field, Form, FormikHelpers } from "formik";
-import ProductService from "./ProductService";
+import UserService from "./UserService";
 import * as Yup from "yup";
 import { Carousel } from 'react-responsive-carousel';
 
+
 interface Input {
-  firstName: string;
-  lastName: string;
+  first_name: string;
+  last_name: string;
   email: string;
 }
 
 //Yup object with elements
 const SignupSchema = Yup.object().shape({
-  firstName: Yup.string().required("first name required"),
-  lastName: Yup.string().required("last name required"),
+  first_name: Yup.string().required("first name required"),
+  last_name: Yup.string().required("last name required"),
   email: Yup.string().email("invalid email").required("email required"),
 });
 
@@ -23,17 +24,17 @@ function NewsLetter() {
       <div>
         <Formik
           initialValues={{
-            firstName: "",
-            lastName: "",
+            first_name: "",
+            last_name: "",
             email: "",
           }}
           validationSchema={SignupSchema}
           onSubmit={(input: Input, { setSubmitting }: FormikHelpers<Input>) => {
             setTimeout(() => {
               console.log("submit");
-              new ProductService().postData(
-                input.firstName,
-                input.lastName,
+              new UserService().postData(
+                input.first_name,
+                input.last_name,
                 input.email
               );
               alert("added");
@@ -48,26 +49,26 @@ function NewsLetter() {
                 <h1 className="site_title">News Letter</h1>
                 <Field
                   id="firstName"
-                  name="firstName"
-                  data-cy="firstname"
+                  name="first_name"
+                  data-cy="first_name"
                   placeholder="first name"
                   className="form-control input_space"
                 />
 
                 {/* if true -> div else null */}
-                {errors.firstName && touched.firstName ? (
-                  <div className="error_message">{errors.firstName}</div>
+                {errors.first_name && touched.first_name ? (
+                  <div className="error_message">{errors.first_name}</div>
                 ) : null}
 
                 <Field
                   id="lastName"
-                  name="lastName"
-                  data-cy="lastname"
+                  name="last_name"
+                  data-cy="last_name"
                   placeholder="last name"
                   className="form-control input_space"
                 />
-                {errors.lastName && touched.lastName ? (
-                  <div className="error_message">{errors.lastName}</div>
+                {errors.last_name && touched.last_name ? (
+                  <div className="error_message">{errors.last_name}</div>
                 ) : null}
 
                 <Field

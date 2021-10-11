@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/users")
+@CrossOrigin("http://localhost:3000/")
 public class UserWeb {
     private UserService userService;
 
@@ -29,4 +30,9 @@ public class UserWeb {
         return ResponseEntity.ok().body(userService.getAllUsers());
     }
 
+
+    @DeleteMapping("/{id}")
+    public void deleteUserById (@PathVariable("id") Integer id) {
+        userService.deleteUser(id);
+    }
 }
