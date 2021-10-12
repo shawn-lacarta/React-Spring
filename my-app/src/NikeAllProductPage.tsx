@@ -8,15 +8,15 @@ import SportCustomCardAPP from "./NikeAllProductPageCustomCard";
 import { SearchContext } from "./SearchContext";
 import SearchBar from "./SearchBar";
 import { productContent } from "./Type";
-import ProductService from "./ProductService";
+import NikeProductService from "./NikeProductService";
 
 function NikeAllProductPage() {
   const [postList, setPost] = useState<productContent[]>([]);
   const { searchTerm } = useContext(SearchContext);
-  const service: ProductService = new ProductService();
+  const service: NikeProductService = new NikeProductService();
 
   useEffect(() => {
-    service.getAllPost("sport").then((data) => setPost(data));
+    service.getAllPost("nike").then((data) => setPost(data));
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
