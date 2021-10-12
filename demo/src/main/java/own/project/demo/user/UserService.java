@@ -30,4 +30,17 @@ public class UserService {
     public void deleteUser(Integer id) {
         userRepository.deleteById(id);
     }
+
+    public User editUser(Integer id, User newUser) {
+        return userRepository.findById(id)
+                .map(user -> {
+                    user.setFirst_name(newUser.getFirst_name());
+                    user.setLast_name(newUser.getLast_name());
+                    user.setEmail(newUser.getEmail());
+                    return userRepository.save(user);
+                }).orElseGet(() -> {
+                    newUser.setId(id);
+                    return userRepository.save(newUser);
+                });
+    }
 }

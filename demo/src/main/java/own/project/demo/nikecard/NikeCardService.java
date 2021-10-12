@@ -1,4 +1,4 @@
 package own.project.demo.nikecard;
 
-public interface NikeCardService {
+public class NikeCardService {
 }

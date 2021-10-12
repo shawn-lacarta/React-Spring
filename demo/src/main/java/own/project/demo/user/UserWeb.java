@@ -35,4 +35,9 @@ public class UserWeb {
     public void deleteUserById (@PathVariable("id") Integer id) {
         userService.deleteUser(id);
     }
+
+    @PutMapping("{id}")
+    public User editUser(@RequestBody User user, @PathVariable Integer id){
+        return userService.editUser(id, user);
+    }
 }
