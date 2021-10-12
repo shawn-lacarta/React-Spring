@@ -6,12 +6,12 @@ import SportCustomCard from "./NikeCustomCard";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { productContent } from "./Type";
-import ProductService from "./ProductService";
+import NikeProductService from "./NikeProductService";
 
 function NikeSinglePage() {
   const [postList, setPost] = useState<productContent[]>([]);
   const { id } = useParams<{ id: string }>();
-  const service: ProductService = new ProductService();
+  const service: NikeProductService = new NikeProductService();
 
   useEffect(() => {
     service.getAllPost("sport").then((data) => setPost(data));

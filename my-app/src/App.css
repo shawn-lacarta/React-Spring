@@ -133,6 +133,8 @@ font-size: 4vh !important;
 
 .error_message{
   color: white;
+  background-color: #f40d30;
+  border-radius: 25px;
 }
 
 
